@@ -16,7 +16,9 @@ public class BookingCommandController {
 
     public Availability checkUserLoggedIn() {
         boolean isSomeoneLoggedIn = this.signingService.isSomeoneLoggedIn();
-        return isSomeoneLoggedIn ?  Availability.available() : Availability.unavailable("Please login before executing this command!");
+        return isSomeoneLoggedIn
+                ? Availability.available() :
+                Availability.unavailable("Please login before executing this command!");
     }
 
     @ShellMethod(value = "Booking tickets.", key = "book")

@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 
 @Component
 public class ScreeningDateTimeConverter {
-    final static String DATE_TIME_PATTERN = "yyyy-MM-dd HH:mm";
+    final String dateTimePattern = "yyyy-MM-dd HH:mm";
 
     public LocalDateTime convertScreeningTimeString(String dateTimeString) {
         return LocalDateTime.parse(dateTimeString, this.getTimeFormat());
@@ -18,6 +18,6 @@ public class ScreeningDateTimeConverter {
     }
 
     private DateTimeFormatter getTimeFormat() {
-        return DateTimeFormatter.ofPattern(DATE_TIME_PATTERN);
+        return DateTimeFormatter.ofPattern(dateTimePattern);
     }
 }

@@ -1,6 +1,6 @@
 package com.epam.training.ticketservice.controller;
 
-import com.epam.training.ticketservice.dto.ScreeningDTO;
+import com.epam.training.ticketservice.dto.ScreeningDto;
 import com.epam.training.ticketservice.service.ScreeningService;
 import com.epam.training.ticketservice.service.SigningService;
 import com.epam.training.ticketservice.util.Formatter;
@@ -19,17 +19,19 @@ public class ScreeningCommandController {
 
     public Availability checkAdmin() {
         boolean isAdminLoggedIn = this.signingService.isAdminLoggedIn();
-        return isAdminLoggedIn ? Availability.available() : Availability.unavailable("Only admin has access for this command!");
+        return isAdminLoggedIn
+                ? Availability.available() :
+                Availability.unavailable("Only admin has access for this command!");
     }
+
     public Availability anyone() {
         return Availability.available();
     }
 
-
     @ShellMethod(value = "Creating screenings.", key = "create screening")
     @ShellMethodAvailability("checkAdmin")
     public String createScreening(String movieName, String roomName, String timeOfScreening) {
-        ScreeningDTO screeningToSave = new ScreeningDTO(movieName, roomName, timeOfScreening);
+        ScreeningDto screeningToSave = new ScreeningDto(movieName, roomName, timeOfScreening);
         return this.screeningService.saveScreening(screeningToSave);
     }
 

@@ -1,6 +1,6 @@
 package com.epam.training.ticketservice.service;
 
-import com.epam.training.ticketservice.dto.MovieDTO;
+import com.epam.training.ticketservice.dto.MovieDto;
 import com.epam.training.ticketservice.entity.Movie;
 import com.epam.training.ticketservice.mapping.MovieMapper;
 import com.epam.training.ticketservice.repository.MovieRepository;
@@ -17,12 +17,12 @@ public class MovieService {
     private final MovieMapper movieMapper;
 
     @Transactional
-    public void saveMovie(final MovieDTO movie) {
+    public void saveMovie(final MovieDto movie) {
         Movie movieEntity = this.movieMapper.mapMovieDtoToEntity(movie);
         this.movieRepository.save(movieEntity);
     }
 
-    public List<MovieDTO> getMovies() {
+    public List<MovieDto> getMovies() {
         return this.movieRepository
                 .findAll()
                 .stream()
@@ -36,19 +36,19 @@ public class MovieService {
     }
 
     @Transactional
-    public String updateMovie(final MovieDTO movieDTO) {
-        var movieOptional = this.movieRepository.findById(movieDTO.getTitle());
+    public String updateMovie(final MovieDto movieDto) {
+        var movieOptional = this.movieRepository.findById(movieDto.getTitle());
 
         if (movieOptional.isEmpty()) {
-            return String.format("Cannot update, because movie '%s' not found!", movieDTO.getTitle());
+            return String.format("Cannot update, because movie '%s' not found!", movieDto.getTitle());
         }
 
         Movie movieToUpdate = movieOptional.get();
-        movieToUpdate.setGenre(movieDTO.getGenre());
-        movieToUpdate.setLength(movieDTO.getLength());
+        movieToUpdate.setGenre(movieDto.getGenre());
+        movieToUpdate.setLength(movieDto.getLength());
         this.movieRepository.save(movieToUpdate);
 
-        return String.format("Movie '%s' updated successfully!", movieDTO.getTitle());
+        return String.format("Movie '%s' updated successfully!", movieDto.getTitle());
     }
 
     public boolean movieExists(String movieName) {

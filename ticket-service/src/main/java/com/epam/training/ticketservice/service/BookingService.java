@@ -1,8 +1,8 @@
 package com.epam.training.ticketservice.service;
 
-import com.epam.training.ticketservice.dto.BookingDTO;
-import com.epam.training.ticketservice.dto.ScreeningDTO;
-import com.epam.training.ticketservice.dto.SeatDTO;
+import com.epam.training.ticketservice.dto.BookingDto;
+import com.epam.training.ticketservice.dto.ScreeningDto;
+import com.epam.training.ticketservice.dto.SeatDto;
 import com.epam.training.ticketservice.entity.Booking;
 import com.epam.training.ticketservice.entity.Screening;
 import com.epam.training.ticketservice.entity.Seat;
@@ -35,18 +35,23 @@ public class BookingService {
     private final BookingValidator bookingValidator;
     private final PriceCalculator priceCalculator;
 
-    public String saveBookings(String userName, String movieTitle, String roomName, String timeOfScreening, String seatsToBook) {
-        List<SeatDTO> seats = this.seatConverter.convertSeatStringToList(seatsToBook, roomName);
+    public String saveBookings(String userName,
+                               String movieTitle,
+                               String roomName,
+                               String timeOfScreening,
+                               String seatsToBook) {
+        List<SeatDto> seats = this.seatConverter.convertSeatStringToList(seatsToBook, roomName);
         List<Booking> bookingsToSave = new ArrayList<>();
-        List<BookingDTO> bookingsForScreening = this.getBookingsForScreening(new ScreeningDTO(movieTitle, roomName, timeOfScreening));
-        String seatsString = String.join(", ", seats.stream().map(SeatDTO::toString).toList());
-        for (SeatDTO seatDTO : seats) {
-            Seat seat = this.seatMapper.convertSeatDtoToEntity(seatDTO);
-            if (!this.bookingValidator.isValidSeatForRoom(roomName, seatDTO)) {
-                return String.format("Seat %s does not exist in this room", seatDTO);
+        ScreeningDto screeningDto = new ScreeningDto(movieTitle, roomName, timeOfScreening);
+        List<BookingDto> bookingsForScreening = this.getBookingsForScreening(screeningDto);
+        String seatsString = String.join(", ", seats.stream().map(SeatDto::toString).toList());
+        for (SeatDto seatDto : seats) {
+            Seat seat = this.seatMapper.convertSeatDtoToEntity(seatDto);
+            if (!this.bookingValidator.isValidSeatForRoom(roomName, seatDto)) {
+                return String.format("Seat %s does not exist in this room", seatDto);
             }
-            if (!this.bookingValidator.isSeatFree(bookingsForScreening, seatDTO)) {
-                return String.format("Seat %s is already taken", seatDTO);
+            if (!this.bookingValidator.isSeatFree(bookingsForScreening, seatDto)) {
+                return String.format("Seat %s is already taken", seatDto);
             }
             this.seatRepository.save(seat);
             LocalDateTime screeningTime = this.dateTimeConverter.convertScreeningTimeString(timeOfScreening);
@@ -62,10 +67,9 @@ public class BookingService {
         return String.format("Seats booked: %s; the price for this booking is %d HUF", seatsString, bookingPrice);
     }
 
-    private List<BookingDTO> getBookingsForScreening(ScreeningDTO screeningDTO) {
-        // TODO this throws an error because it's not flushed and nor transient
+    private List<BookingDto> getBookingsForScreening(ScreeningDto screeningDto) {
         return this.bookingRepository
-                .getBookingsByScreening(this.screeningMapper.mapScreeningDtoToEntity(screeningDTO))
+                .getBookingsByScreening(this.screeningMapper.mapScreeningDtoToEntity(screeningDto))
                 .get()
                 .stream()
                 .map(this.bookingMapper::convertBookingEntityToDto)
@@ -78,15 +82,20 @@ public class BookingService {
             return "You have not booked any tickets yet";
         }
         var bookingEntities = bookingEntitiesOptional.get();
-        var bookingDtoList = bookingEntities.stream()
+        var bookingDtoList = bookingEntities
+                .stream()
                 .map(this.bookingMapper::convertBookingEntityToDto)
                 .toList();
-        List<ScreeningDTO> bookedScreenings = bookingDtoList.stream().map(BookingDTO::getScreeningDTO).distinct().toList();
+        List<ScreeningDto> bookedScreenings = bookingDtoList
+                .stream()
+                .map(BookingDto::getScreeningDto)
+                .distinct()
+                .toList();
 
         return this.formatBookingListForScreenings(bookedScreenings);
     }
 
-    private String formatBookingListForScreenings(List<ScreeningDTO> screenings) {
+    private String formatBookingListForScreenings(List<ScreeningDto> screenings) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Your previous bookings are").append("\n");
         for (int i = 0; i < screenings.size(); i++) {
@@ -94,8 +103,8 @@ public class BookingService {
             var bookingsForScreening = this.bookingRepository.getBookingsByScreening(screeningEntity).get();
             var bookedSeats = bookingsForScreening.stream()
                     .map(this.bookingMapper::convertBookingEntityToDto)
-                    .map(BookingDTO::getBookedSeat)
-                    .map(SeatDTO::toString)
+                    .map(BookingDto::getBookedSeat)
+                    .map(SeatDto::toString)
                     .toList();
             var bookedSeatsString = String.join(", ", bookedSeats);
             String bookRecord = String.format("Seats %s on %s in room %s starting at %s for %d HUF",

@@ -1,9 +1,8 @@
 package com.epam.training.ticketservice.util;
 
-import com.epam.training.ticketservice.dto.MovieDTO;
-import com.epam.training.ticketservice.dto.RoomDTO;
-import com.epam.training.ticketservice.dto.ScreeningDTO;
-import com.epam.training.ticketservice.entity.Movie;
+import com.epam.training.ticketservice.dto.MovieDto;
+import com.epam.training.ticketservice.dto.RoomDto;
+import com.epam.training.ticketservice.dto.ScreeningDto;
 import com.epam.training.ticketservice.service.MovieService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -15,25 +14,26 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class Formatter {
     private final MovieService movieService;
-    public String formatMovieList(List<MovieDTO> movies) {
+
+    public String formatMovieList(List<MovieDto> movies) {
         if (movies.isEmpty()) {
             return "There are no movies at the moment";
         }
         return movies.stream()
-                .map(MovieDTO::toString)
+                .map(MovieDto::toString)
                 .collect(Collectors.joining("\n", "", ""));
     }
 
-    public String formatRoomList(List<RoomDTO> rooms) {
+    public String formatRoomList(List<RoomDto> rooms) {
         if (rooms.isEmpty()) {
             return "There are no rooms at the moment";
         }
         return rooms.stream()
-                .map(RoomDTO::toString)
+                .map(RoomDto::toString)
                 .collect(Collectors.joining("\n", "", ""));
     }
 
-    public String formatScreenings(List<ScreeningDTO> screenings) {
+    public String formatScreenings(List<ScreeningDto> screenings) {
         if (screenings.isEmpty()) {
             return "There are no screenings";
         }
@@ -44,7 +44,7 @@ public class Formatter {
             String roomName = screenings.get(i).getRoomName();
             String date = screenings.get(i).getTimeOfScreening();
 
-            MovieDTO movie = movies.stream()
+            MovieDto movie = movies.stream()
                     .filter(movieDTO -> movieDTO.getTitle().equals(movieTitle))
                     .findFirst()
                     .get();

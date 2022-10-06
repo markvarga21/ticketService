@@ -1,7 +1,7 @@
 package com.epam.training.ticketservice.service;
 
-import com.epam.training.ticketservice.dto.UserDTO;
-import com.epam.training.ticketservice.dto.UserSessionDTO;
+import com.epam.training.ticketservice.dto.UserDto;
+import com.epam.training.ticketservice.dto.UserSessionDto;
 import com.epam.training.ticketservice.entity.User;
 import com.epam.training.ticketservice.entity.UserSession;
 import com.epam.training.ticketservice.mapping.UserMapper;
@@ -29,10 +29,10 @@ public class SigningService {
             return "Someone is already logged in, please log out first!";
         }
         if (userName.equals("admin") && password.equals("admin")) {
-            UserSessionDTO userSessionDTO = new UserSessionDTO(userName);
-            UserSession userSession = this.userSessionMapper.mapUserSessionDtoToEntity(userSessionDTO);
+            UserSessionDto userSessionDto = new UserSessionDto(userName);
+            UserSession userSession = this.userSessionMapper.mapUserSessionDtoToEntity(userSessionDto);
             this.userSessionRepository.save(userSession);
-            return "Login success!";
+            return "Signed in with privileged account 'admin'";
         }
         return "Login failed due to incorrect credentials";
     }
@@ -68,15 +68,15 @@ public class SigningService {
             return "Someone is already logged in, please log out first!";
         }
 
-        UserSessionDTO userSessionDTO = new UserSessionDTO(userName);
-        this.userSessionRepository.save(this.userSessionMapper.mapUserSessionDtoToEntity(userSessionDTO));
+        UserSessionDto userSessionDto = new UserSessionDto(userName);
+        this.userSessionRepository.save(this.userSessionMapper.mapUserSessionDtoToEntity(userSessionDto));
         return "Login successful!";
     }
 
     @Transactional
     public String signUpUser(String userName, String password) {
-        UserDTO userDTO = new UserDTO(userName, password);
-        this.userRepository.save(this.userMapper.mapUserDtoToEntity(userDTO));
+        UserDto userDto = new UserDto(userName, password);
+        this.userRepository.save(this.userMapper.mapUserDtoToEntity(userDto));
         return String.format("User '%s' signed up successfully!", userName);
     }
 

@@ -16,7 +16,9 @@ public class PricingCommandController {
 
     public Availability checkAdmin() {
         boolean isAdminLoggedIn = this.signingService.isAdminLoggedIn();
-        return isAdminLoggedIn ?  Availability.available() : Availability.unavailable("Only admin has access for this command!");
+        return isAdminLoggedIn
+                ? Availability.available() :
+                Availability.unavailable("Only admin has access for this command!");
     }
 
     @ShellMethod(value = "Updating base price.", key = "update base price")
@@ -43,9 +45,13 @@ public class PricingCommandController {
         return this.pricingService.attachPriceComponentToMovie(componentName, movieName);
     }
 
-    @ShellMethod(value = "Attaching price components to screenings.", key = "attach price component to screening")
+    @ShellMethod(value = "Attaching price components to screenings.",
+            key = "attach price component to screening")
     @ShellMethodAvailability("checkAdmin")
-    public String attachPriceComponentToScreening(String componentName, String movieName, String roomName, String dateOfScreening) {
+    public String attachPriceComponentToScreening(String componentName,
+                                                  String movieName,
+                                                  String roomName,
+                                                  String dateOfScreening) {
         return this.pricingService.attachPriceComponentToScreening(componentName, movieName, roomName, dateOfScreening);
     }
 

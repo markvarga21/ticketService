@@ -1,10 +1,20 @@
 package com.epam.training.ticketservice.service;
 
-import com.epam.training.ticketservice.dto.PriceComponentDTO;
-import com.epam.training.ticketservice.entity.*;
+import com.epam.training.ticketservice.entity.BasePrice;
+import com.epam.training.ticketservice.entity.MoviePriceAttachment;
+import com.epam.training.ticketservice.entity.RoomPriceAttachment;
+import com.epam.training.ticketservice.entity.PriceComponent;
+import com.epam.training.ticketservice.entity.ScreeningPriceAttachment;
+
 import com.epam.training.ticketservice.mapping.BasePriceMapper;
 import com.epam.training.ticketservice.mapping.PriceComponentMapper;
-import com.epam.training.ticketservice.repository.*;
+
+import com.epam.training.ticketservice.repository.BasePriceRepository;
+import com.epam.training.ticketservice.repository.PriceComponentRepository;
+import com.epam.training.ticketservice.repository.RoomPriceAttachmentRepository;
+import com.epam.training.ticketservice.repository.MoviePriceAttachmentRepository;
+import com.epam.training.ticketservice.repository.ScreeningPriceAttachmentRepository;
+
 import com.epam.training.ticketservice.util.SeatConverter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -78,9 +88,9 @@ public class PricingService {
                 .findAll()
                 .stream()
                 .filter(screeningPriceAttachment ->
-                        screeningPriceAttachment.getRoomName().equals(roomName) &&
-                                screeningPriceAttachment.getMovieName().equals(movieName) &&
-                                screeningPriceAttachment.getScreeningDate().equals(screeningDate)
+                        screeningPriceAttachment.getRoomName().equals(roomName)
+                                && screeningPriceAttachment.getMovieName().equals(movieName)
+                                && screeningPriceAttachment.getScreeningDate().equals(screeningDate)
                 )
                 .map(ScreeningPriceAttachment::getComponentName)
                 .findFirst();
@@ -109,7 +119,9 @@ public class PricingService {
         priceComponentToSave.setComponentName(componentName);
         priceComponentToSave.setComponentPrice(componentPrice);
         this.priceComponentRepository.save(priceComponentToSave);
-        return String.format("Price component with name %s and price %d saved successfully!", componentName, componentPrice);
+        return String.format("Price component with name %s and price %d saved successfully!",
+                componentName,
+                componentPrice);
     }
 
     public String attachPriceComponentToRoom(String componentName, String roomName) {
@@ -128,7 +140,10 @@ public class PricingService {
         return String.format("Component with name %s attached to movie %s", componentName, movieName);
     }
 
-    public String attachPriceComponentToScreening(String componentName, String movieName, String roomName, String dateOfScreening) {
+    public String attachPriceComponentToScreening(String componentName,
+                                                  String movieName,
+                                                  String roomName,
+                                                  String dateOfScreening) {
         ScreeningPriceAttachment screeningPriceAttachment = new ScreeningPriceAttachment();
         screeningPriceAttachment.setComponentName(componentName);
         screeningPriceAttachment.setMovieName(movieName);

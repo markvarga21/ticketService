@@ -1,6 +1,6 @@
 package com.epam.training.ticketservice.service;
 
-import com.epam.training.ticketservice.dto.RoomDTO;
+import com.epam.training.ticketservice.dto.RoomDto;
 import com.epam.training.ticketservice.entity.Room;
 import com.epam.training.ticketservice.mapping.RoomMapper;
 import com.epam.training.ticketservice.repository.RoomRepository;
@@ -17,13 +17,13 @@ public class RoomService {
     private final RoomMapper roomMapper;
 
     @Transactional
-    public String saveRoom(RoomDTO roomToSave) {
+    public String saveRoom(RoomDto roomToSave) {
         Room roomEntity = this.roomMapper.mapRoomDtoToEntity(roomToSave);
         this.roomRepository.save(roomEntity);
         return String.format("Room '%s' created!", roomToSave.getName());
     }
 
-    public List<RoomDTO> getRooms() {
+    public List<RoomDto> getRooms() {
         return this.roomRepository
                 .findAll()
                 .stream()
@@ -37,7 +37,7 @@ public class RoomService {
     }
 
     @Transactional
-    public String updateRoom(RoomDTO roomToUpdate) {
+    public String updateRoom(RoomDto roomToUpdate) {
         var roomOptional = this.roomRepository.findById(roomToUpdate.getName());
 
         if (roomOptional.isEmpty()) {

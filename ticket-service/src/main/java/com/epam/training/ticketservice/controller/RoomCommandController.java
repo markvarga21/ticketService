@@ -1,7 +1,6 @@
 package com.epam.training.ticketservice.controller;
 
-import com.epam.training.ticketservice.dto.MovieDTO;
-import com.epam.training.ticketservice.dto.RoomDTO;
+import com.epam.training.ticketservice.dto.RoomDto;
 import com.epam.training.ticketservice.service.RoomService;
 import com.epam.training.ticketservice.service.SigningService;
 import com.epam.training.ticketservice.util.Formatter;
@@ -20,17 +19,19 @@ public class RoomCommandController {
 
     public Availability checkAdmin() {
         boolean isAdminLoggedIn = this.signingService.isAdminLoggedIn();
-        return isAdminLoggedIn ? Availability.available() : Availability.unavailable("Only admin has access for this command!");
+        return isAdminLoggedIn
+                ? Availability.available() :
+                Availability.unavailable("Only admin has access for this command!");
     }
+
     public Availability anyone() {
         return Availability.available();
     }
 
-
     @ShellMethod(value = "Creating rooms.", key = "create room")
     @ShellMethodAvailability("checkAdmin")
     public String createRoom(String name, Long chairRowCount, Long chairColumnCount) {
-        RoomDTO roomToSave = new RoomDTO(name, chairRowCount, chairColumnCount);
+        RoomDto roomToSave = new RoomDto(name, chairRowCount, chairColumnCount);
         return this.roomService.saveRoom(roomToSave);
     }
 
@@ -53,7 +54,7 @@ public class RoomCommandController {
     @ShellMethod(value = "Updating rooms.", key = "update room")
     @ShellMethodAvailability("checkAdmin")
     public String updateRoom(String name, Long chairRowsCount, Long chairColumnsCount) {
-        RoomDTO roomToUpdate = new RoomDTO(name, chairRowsCount, chairColumnsCount);
+        RoomDto roomToUpdate = new RoomDto(name, chairRowsCount, chairColumnsCount);
         return this.roomService.updateRoom(roomToUpdate);
     }
 }

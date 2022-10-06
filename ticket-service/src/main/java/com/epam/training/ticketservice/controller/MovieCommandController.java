@@ -1,6 +1,6 @@
 package com.epam.training.ticketservice.controller;
 
-import com.epam.training.ticketservice.dto.MovieDTO;
+import com.epam.training.ticketservice.dto.MovieDto;
 import com.epam.training.ticketservice.service.MovieService;
 import com.epam.training.ticketservice.service.SigningService;
 import com.epam.training.ticketservice.util.Formatter;
@@ -16,9 +16,12 @@ public class MovieCommandController {
     private final SigningService signingService;
     private final MovieService movieService;
     private final Formatter formatter;
+
     public Availability checkAdmin() {
         boolean isAdminLoggedIn = this.signingService.isAdminLoggedIn();
-        return isAdminLoggedIn ?  Availability.available() : Availability.unavailable("Only admin has access for this command!");
+        return isAdminLoggedIn
+                ? Availability.available() :
+                Availability.unavailable("Only admin has access for this command!");
     }
 
     public Availability anyone() {
@@ -28,7 +31,7 @@ public class MovieCommandController {
     @ShellMethod(value = "Creating movies", key = "create movie")
     @ShellMethodAvailability("checkAdmin")
     public String createMovie(String name, String genre, Long length) {
-        MovieDTO movieToSave = new MovieDTO(name, genre, length);
+        MovieDto movieToSave = new MovieDto(name, genre, length);
         this.movieService.saveMovie(movieToSave);
         return String.format("Movie '%s' with the length of %d created!", name, length);
     }
@@ -52,7 +55,7 @@ public class MovieCommandController {
     @ShellMethod(value = "Updating movies.", key = "update movie")
     @ShellMethodAvailability("checkAdmin")
     public String updateMovie(String title, String genre, Long length) {
-        MovieDTO movieToSave = new MovieDTO(title, genre, length);
+        MovieDto movieToSave = new MovieDto(title, genre, length);
         return this.movieService.updateMovie(movieToSave);
     }
 }

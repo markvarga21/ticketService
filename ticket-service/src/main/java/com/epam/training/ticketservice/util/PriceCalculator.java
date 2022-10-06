@@ -14,10 +14,10 @@ public class PriceCalculator {
     }
 
     private Long calculateAttachmentPricePerSeat(String roomName, String movieName, String dateOfScreening) {
-        return this.pricingService.getBasePrice() +
-                this.priceAttachmentForRoom(roomName) +
-                this.priceAttachmentForMovie(movieName) +
-                this.priceAttachmentForScreening(roomName, movieName, dateOfScreening);
+        return this.pricingService.getBasePrice()
+                + this.priceAttachmentForRoom(roomName)
+                + this.priceAttachmentForMovie(movieName)
+                + this.priceAttachmentForScreening(roomName, movieName, dateOfScreening);
     }
 
     private Long priceAttachmentForRoom(String roomName) {

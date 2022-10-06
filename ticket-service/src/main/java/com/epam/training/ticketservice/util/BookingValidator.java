@@ -1,7 +1,7 @@
 package com.epam.training.ticketservice.util;
 
-import com.epam.training.ticketservice.dto.BookingDTO;
-import com.epam.training.ticketservice.dto.SeatDTO;
+import com.epam.training.ticketservice.dto.BookingDto;
+import com.epam.training.ticketservice.dto.SeatDto;
 import com.epam.training.ticketservice.service.RoomService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,7 @@ import java.util.List;
 public class BookingValidator {
     private final RoomService roomService;
 
-    public boolean isValidSeatForRoom(String roomName, SeatDTO seatToCheck) {
+    public boolean isValidSeatForRoom(String roomName, SeatDto seatToCheck) {
         return this.roomService
                 .getRooms()
                 .stream()
@@ -22,8 +22,8 @@ public class BookingValidator {
                             && seatToCheck.getSeatRow() <= roomDTO.getChairRowsCount());
     }
 
-    public boolean isSeatFree(List<BookingDTO> bookingsForScreening, SeatDTO seatDTO) {
+    public boolean isSeatFree(List<BookingDto> bookingsForScreening, SeatDto seatDto) {
         return bookingsForScreening.stream()
-                .noneMatch(bookingDTO -> bookingDTO.getBookedSeat().equals(seatDTO));
+                .noneMatch(bookingDto -> bookingDto.getBookedSeat().equals(seatDto));
     }
 }

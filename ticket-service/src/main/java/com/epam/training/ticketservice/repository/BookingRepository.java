@@ -11,5 +11,6 @@ import java.util.Optional;
 @Repository
 public interface BookingRepository extends JpaRepository<Booking, Long> {
     Optional<List<Booking>> getBookingsByUserName(String userName);
+
     Optional<List<Booking>> getBookingsByScreening(Screening screening);
 }

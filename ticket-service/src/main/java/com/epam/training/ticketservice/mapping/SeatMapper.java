@@ -1,6 +1,6 @@
 package com.epam.training.ticketservice.mapping;
 
-import com.epam.training.ticketservice.dto.SeatDTO;
+import com.epam.training.ticketservice.dto.SeatDto;
 import com.epam.training.ticketservice.entity.Seat;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -11,11 +11,11 @@ import org.springframework.stereotype.Component;
 public class SeatMapper {
     private final ModelMapper modelMapper;
 
-    public Seat convertSeatDtoToEntity(SeatDTO seatDTO) {
-        return new Seat(seatDTO.getRoomName(), seatDTO.getSeatRow(), seatDTO.getSeatColumn());
+    public Seat convertSeatDtoToEntity(SeatDto seatDto) {
+        return new Seat(seatDto.getRoomName(), seatDto.getSeatRow(), seatDto.getSeatColumn());
     }
 
-    public SeatDTO convertSeatEntityToDto(Seat seat) {
-        return new SeatDTO(seat.getRoomName(), seat.getSeatRow(), seat.getSeatColumn());
+    public SeatDto convertSeatEntityToDto(Seat seat) {
+        return new SeatDto(seat.getRoomName(), seat.getSeatRow(), seat.getSeatColumn());
     }
 }
