@@ -165,6 +165,6 @@ public class PricingService {
         Long basePrice = this.getBasePrice();
 
         Long totalPrice = (roomPrice + moviePrice + screeningPrice + basePrice) * numberOfSeats;
-        return String.format("The price for this booking would be %d", totalPrice);
+        return String.format("The price for this booking would be %d HUF", totalPrice);
     }
 }

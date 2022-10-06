@@ -237,3 +237,296 @@
 1665081070956:create screening "Pulp Fiction" Girotti "2021-03-14 16:00"
 1665081071211:sign out
 1665081071482:show price for SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" 10,5
+1665082150551:sign in privileged admin admin
+1665082151445:describe account
+1665082210866:sign in privileged admin admin
+1665082211156:sign out
+1665082211345:describe account
+1665082228460:sign in privileged admin asdQWE123
+1665082228960:describe account
+1665082246757:sign up sanyi asdQWE123
+1665082247005:sign in sanyi asdQWE123
+1665082247270:describe account
+1665082265121:sign up sanyi asdQWE123
+1665082265372:sign in sanyi alma
+1665082596503:sign up sanyi asdQWE123
+1665082596751:sign in sanyi asdQWE123
+1665082597003:sign out
+1665082597270:describe account
+1665082654039:sign in privileged admin admin
+1665082662621:sign out
+1665082662888:describe account
+1665082671449:sign in privileged admin asdQWE123
+1665082672005:describe account
+1665082682367:sign up sanyi asdQWE123
+1665082682626:sign in sanyi asdQWE123
+1665082682893:describe account
+1665082691394:sign up sanyi asdQWE123
+1665082691656:sign in sanyi alma
+1665082692081:describe account
+1665082700474:sign up sanyi asdQWE123
+1665082700734:sign in sanyi asdQWE123
+1665082701001:sign out
+1665082701274:describe account
+1665082723099:sign up sanyi asdQWE123
+1665082723350:sign up laci asdQWE123
+1665082723616:sign in privileged admin admin
+1665082723871:create room Pedersoli 20 10
+1665082724137:create room Girotti 10 10
+1665082724418:create movie SĂˇtĂˇntangĂł drama 450
+1665082724670:create movie "Spirited Away" animation 125
+1665082724944:create screening "Spirited Away" Girotti "2021-03-15 10:00"
+1665082725186:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665082725449:sign out
+1665082725722:sign in sanyi asdQWE123
+1665082725998:book SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" "5,5 5,6"
+1665082726388:describe account
+1665082743329:sign up sanyi asdQWE123
+1665082743593:sign up laci asdQWE123
+1665082743871:sign in privileged admin admin
+1665082744130:create room Pedersoli 20 10
+1665082744397:create room Girotti 10 10
+1665082744676:create movie SĂˇtĂˇntangĂł drama 450
+1665082744923:create movie "Spirited Away" animation 125
+1665082745207:create screening "Spirited Away" Girotti "2021-03-15 10:00"
+1665082745464:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665082745716:sign out
+1665082745988:sign in sanyi asdQWE123
+1665082746263:book SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" "5,5"
+1665082746496:sign out
+1665082746772:sign in laci asdQWE123
+1665082747045:book SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" "5,5 5,6"
+1665082747358:describe account
+1665082790678:sign up sanyi asdQWE123
+1665082790937:sign up laci asdQWE123
+1665082791200:sign in privileged admin admin
+1665082791465:create room Pedersoli 20 10
+1665082791732:create room Girotti 10 10
+1665082792018:create movie SĂˇtĂˇntangĂł drama 450
+1665082792276:create movie "Spirited Away" animation 125
+1665082792537:create screening "Spirited Away" Girotti "2021-03-15 10:00"
+1665082792804:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665082793055:sign out
+1665082793319:sign in sanyi asdQWE123
+1665082793585:book SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" "5,5"
+1665082793847:sign out
+1665082794116:sign in privileged admin admin
+1665082794380:update base price 5000
+1665082794660:sign out
+1665082794928:sign in sanyi asdQWE123
+1665082795186:describe account
+1665082913411:sign in privileged admin admin
+1665082913693:create movie SĂˇtĂˇntangĂł drama 450
+1665082913922:list movies
+1665082929314:sign in privileged admin admin
+1665082929633:create movie SĂˇtĂˇntangĂł dram 450
+1665082929863:update movie SĂˇtĂˇntangĂł drama 450
+1665082930104:list movies
+1665082945538:sign in privileged admin admin
+1665082945838:create movie SĂˇtĂˇntangĂł drama 450
+1665082946078:delete movie SĂˇtĂˇntangĂł
+1665082946344:list movies
+1665082961807:sign in privileged admin admin
+1665082962116:create movie SĂˇtĂˇntangĂł drama 450
+1665082962321:sign out
+1665082962578:list movies
+1665082977925:sign in privileged admin admin
+1665082978250:create movie SĂˇtĂˇntangĂł drama 450
+1665082978443:sign out
+1665082978711:sign up sanyi asdQWE123
+1665082978976:sign in sanyi asdQWE123
+1665082979228:list movies
+1665083004161:sign in privileged admin admin
+1665083004475:create room Pedersoli 20 10
+1665083004683:create room Girotti 10 10
+1665083004959:create movie SĂˇtĂˇntangĂł drama 450
+1665083005238:create movie "Spirited Away" aminmation 125
+1665083005496:create movie "Pulp Fiction" drama 154
+1665083005774:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083006034:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083006286:create screening "Pulp Fiction" Girotti "2021-03-14 16:00"
+1665083006542:sign out
+1665083006818:show price for SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" 10,5
+1665083059835:sign in privileged admin admin
+1665083060159:create room Pedersoli 20 10
+1665083060363:create room Girotti 10 10
+1665083060641:create movie SĂˇtĂˇntangĂł drama 450
+1665083060892:create movie "Spirited Away" aminmation 125
+1665083061169:create movie "Pulp Fiction" drama 154
+1665083061449:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083061697:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083061975:create screening "Pulp Fiction" Girotti "2021-03-14 16:00"
+1665083062216:sign out
+1665083062484:sign in privileged admin admin
+1665083062742:update base price 1000
+1665083063017:show price for SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" 10,5
+1665083110518:sign in privileged admin admin
+1665083110843:create room Pedersoli 20 10
+1665083111035:create room Girotti 10 10
+1665083111313:create movie SĂˇtĂˇntangĂł drama 450
+1665083111573:create movie "Spirited Away" aminmation 125
+1665083111840:create movie "Pulp Fiction" drama 154
+1665083112100:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083112381:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083112642:create screening "Pulp Fiction" Girotti "2021-03-14 16:00"
+1665083112888:sign out
+1665083113174:show price for SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" 10,5
+1665083128096:sign in privileged admin admin
+1665083128411:create room Pedersoli 20 10
+1665083128622:create room Girotti 10 10
+1665083128909:create movie SĂˇtĂˇntangĂł drama 450
+1665083129162:create movie "Spirited Away" aminmation 125
+1665083129428:create movie "Pulp Fiction" drama 154
+1665083129707:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083129971:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083130223:create screening "Pulp Fiction" Girotti "2021-03-14 16:00"
+1665083130481:sign out
+1665083130747:sign in privileged admin admin
+1665083131002:update base price 1000
+1665083131268:show price for SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" 10,5
+1665083148021:sign in privileged admin admin
+1665083148308:create room Pedersoli 20 10
+1665083148542:create room Girotti 10 10
+1665083148832:create movie SĂˇtĂˇntangĂł drama 450
+1665083149088:create movie "Spirited Away" aminmation 125
+1665083149344:create movie "Pulp Fiction" drama 154
+1665083149608:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083149880:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083150146:create screening "Pulp Fiction" Girotti "2021-03-14 16:00"
+1665083150401:sign out
+1665083150673:sign in privileged admin admin
+1665083150949:create price component additionalFeeForSatantango 100
+1665083151217:attach price component to movie additionalFeeForSatantango SĂˇtĂˇntangĂł
+1665083151472:show price for SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" 10,5
+1665083151780:show price for "Spirited Away" Pedersoli "2021-03-14 16:00" 10,5
+1665083168858:sign in privileged admin admin
+1665083169116:create room Pedersoli 20 10
+1665083169371:create room Girotti 10 10
+1665083169655:create movie SĂˇtĂˇntangĂł drama 450
+1665083169930:create movie "Spirited Away" aminmation 125
+1665083170173:create movie "Pulp Fiction" drama 154
+1665083170447:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083170707:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083170954:create screening "Pulp Fiction" Girotti "2021-03-14 16:00"
+1665083171216:sign out
+1665083171481:sign in privileged admin admin
+1665083171760:create price component additionalFeeForPedersoli 100
+1665083172027:attach price component to room additionalFeeForPedersoli Pedersoli
+1665083172285:show price for SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" 10,5
+1665083172637:show price for "Pulp Fiction" Girotti "2021-03-14 16:00" 5,5
+1665083187631:sign in privileged admin admin
+1665083187966:create room Pedersoli 20 10
+1665083188157:create room Girotti 10 10
+1665083188442:create movie SĂˇtĂˇntangĂł drama 450
+1665083188691:create movie "Spirited Away" aminmation 125
+1665083188950:create movie "Pulp Fiction" drama 154
+1665083189243:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083189489:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083189761:create screening "Pulp Fiction" Girotti "2021-03-14 16:00"
+1665083190006:sign out
+1665083190303:sign in privileged admin admin
+1665083190584:create price component additionalFeeForPulpFictionScreening 100
+1665083190856:attach price component to screening additionalFeeForPulpFictionScreening "Pulp Fiction" Girotti "2021-03-14 16:00"
+1665083191110:show price for "Pulp Fiction" Girotti "2021-03-14 16:00" 5,5
+1665083191441:show price for SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45" 10,5
+1665083207764:sign in privileged admin admin
+1665083208038:create room Pedersoli 20 10
+1665083208280:list rooms
+1665083223706:sign in privileged admin admin
+1665083224010:create room Pedersoli 20 10
+1665083224212:update room Pedersoli 10 10
+1665083224479:list rooms
+1665083239543:sign in privileged admin admin
+1665083239871:create room Pedersoli 20 10
+1665083240058:delete room Pedersoli
+1665083240328:list rooms
+1665083255725:sign in privileged admin admin
+1665083255985:create room Pedersoli 20 10
+1665083256225:sign out
+1665083256491:list rooms
+1665083271886:sign in privileged admin admin
+1665083272149:create room Pedersoli 20 10
+1665083272396:sign out
+1665083272670:sign up sanyi asdQWE123
+1665083272935:sign in sanyi asdQWE123
+1665083273198:list rooms
+1665083294562:sign in privileged admin admin
+1665083294920:create room Pedersoli 20 10
+1665083295088:create room Girotti 10 10
+1665083295365:create movie SĂˇtĂˇntangĂł drama 450
+1665083295617:create movie "Spirited Away" animation 125
+1665083295869:sign out
+1665083296133:sign in privileged admin admin
+1665083296401:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083296666:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083296923:list screenings
+1665083380667:sign in privileged admin admin
+1665083380988:create room Pedersoli 20 10
+1665083381197:create room Girotti 10 10
+1665083381466:create movie SĂˇtĂˇntangĂł drama 450
+1665083381718:create movie "Spirited Away" animation 125
+1665083381983:sign out
+1665083382262:sign in privileged admin admin
+1665083382544:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083382801:create screening "Spirited Away" Pedersoli "2021-03-15 10:50"
+1665083383105:list screenings
+1665083420037:sign in privileged admin admin
+1665083420391:create room Pedersoli 20 10
+1665083420546:create room Girotti 10 10
+1665083420838:create movie SĂˇtĂˇntangĂł drama 450
+1665083421090:create movie "Spirited Away" animation 125
+1665083421346:sign out
+1665083421614:sign in privileged admin admin
+1665083421901:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083422152:create screening "Spirited Away" Girotti "2021-03-15 10:50"
+1665083422409:list screenings
+1665083602703:sign in privileged admin admin
+1665083603124:create room Pedersoli 20 10
+1665083603217:create room Girotti 10 10
+1665083603486:create movie SĂˇtĂˇntangĂł drama 450
+1665083603755:create movie "Spirited Away" animation 125
+1665083604012:sign out
+1665083604290:sign in privileged admin admin
+1665083604568:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083604824:create screening "Spirited Away" Girotti "2021-03-15 10:50"
+1665083605077:list screenings
+1665083625597:sign in privileged admin admin
+1665083625905:create room Pedersoli 20 10
+1665083626110:create room Girotti 10 10
+1665083626396:create movie SĂˇtĂˇntangĂł drama 450
+1665083626643:create movie "Spirited Away" animation 125
+1665083626907:sign out
+1665083627173:sign in privileged admin admin
+1665083627441:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083627706:create screening "Spirited Away" Pedersoli "2021-03-15 10:50"
+1665083627997:list screenings
+1665083670719:sign in privileged admin admin
+1665083671024:create room Pedersoli 20 10
+1665083671237:create room Girotti 10 10
+1665083671499:create movie SĂˇtĂˇntangĂł drama 450
+1665083671760:create movie "Spirited Away" animation 125
+1665083672025:sign out
+1665083672290:sign in privileged admin admin
+1665083672560:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665083672821:create screening "Spirited Away" Girotti "2021-03-15 10:50"
+1665083673078:list screenings
+1665083726098:sign in privileged admin admin
+1665083726596:create room Pedersoli 20 10
+1665083726678:create room Girotti 10 10
+1665083726893:create movie SĂˇtĂˇntangĂł drama 450
+1665083727158:create movie "Spirited Away" animation 125
+1665083727412:sign out
+1665083727683:sign in privileged admin admin
+1665083727951:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 11:00"
+1665083728202:create screening "Spirited Away" Girotti "2021-03-15 18:39"
+1665083728473:list screenings
+1665083757803:sign in privileged admin admin
+1665083758069:create room Pedersoli 20 10
+1665083758314:create room Girotti 10 10
+1665083758585:create movie SĂˇtĂˇntangĂł drama 450
+1665083758859:create movie "Spirited Away" animation 125
+1665083759114:sign out
+1665083759393:sign in privileged admin admin
+1665083759677:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083759922:delete screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083760181:list screenings

@@ -1,2 +1,16 @@
 1665052889905:sign in privileged admin admin
 1665052893813:create movie Avengers scifi 120
+1665082558255:sign up sanyi asdQWE123
+1665082562638:sign in sanyi asdQWE123
+1665082568116:sign out
+1665082571397:describe account
+1665083464808:sign in privileged admin admin
+1665083468057:create room Pedersoli 20 10
+1665083472384:create room Girotti 10 10
+1665083476525:create movie Sátántangó drama 450
+1665083483185:create movie "Spirited Away" animation 125
+1665083487270:sign out
+1665083495499:sign in privileged admin admin
+1665083504596:create screening Sátántangó Pedersoli "2021-03-15 10:45"
+1665083514970:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665083519014:list screenings

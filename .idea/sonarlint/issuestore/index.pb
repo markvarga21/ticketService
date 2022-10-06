@@ -21,8 +21,6 @@ fticket-service-acceptance-tests/src/test/java/com/training/epam/ticketservice/a
 oticket-service-acceptance-tests/src/test/java/com/training/epam/ticketservice/at/GenericCliProcessStepDefs.java,4\4\44db52b60183e62c4365f435d7cc783dbef7d050
 •
 eticket-service/src/main/java/com/epam/training/ticketservice/controller/BookingCommandController.java,6\3\63070ded2362eb0747e2351527a83dd65402a1ad
-•
-eticket-service/src/main/java/com/epam/training/ticketservice/controller/PricingCommandController.java,6\1\61cadcb9a6874654f3120aff76a58bcbdda46e14
 ‚
 Rticket-service/src/main/java/com/epam/training/ticketservice/dto/BasePriceDto.java,d\0\d0fff8bd2310815edfb26c5e44a419eb1ce21ca2
 —
@@ -71,3 +69,17 @@ Tticket-service/src/main/java/com/epam/training/ticketservice/mapping/UserMapper
 Xticket-service/src/main/java/com/epam/training/ticketservice/service/BookingService.java,4\2\425a24c739fd8ab0c00b116fc9ba1f63b6679d95
 †
 Vticket-service/src/main/java/com/epam/training/ticketservice/service/MovieService.java,2\a\2a03de35d5e4cab8d5e9c5f360c0138d36e400d0
+Š
+Zticket-service/src/main/java/com/epam/training/ticketservice/service/ScreeningService.java,b\9\b9ab176696f5997fbc38d4e1c441675765c52f6f
+‡
+Wticket-service/src/main/java/com/epam/training/ticketservice/util/BookingValidator.java,1\2\12bd2b1af361d44c7227fa428d7270d638bb0b38
+€
+Pticket-service/src/main/java/com/epam/training/ticketservice/util/Formatter.java,f\e\fefd9bbd0a55b29f9c8ee3083e2a78ee3763e732
+‘
+aticket-service/src/main/java/com/epam/training/ticketservice/util/ScreeningDateTimeConverter.java,a\8\a8e76cf958176171ed47cf09872eb2322ad788de
+†
+Vticket-service/src/main/java/com/epam/training/ticketservice/util/PriceCalculator.java,9\3\93e07e1d0c8eae76064611b6f5222205517a4727
+‰
+Yticket-service/src/main/java/com/epam/training/ticketservice/util/ScreeningValidator.java,1\e\1e49e6423d75d8db11dfda2b089e3a52dafa3ca1
+‚
+Rticket-service/src/main/java/com/epam/training/ticketservice/dto/ScreeningDto.java,e\f\ef0536fa9e6a38fbe177b16056f7611f680fdb01

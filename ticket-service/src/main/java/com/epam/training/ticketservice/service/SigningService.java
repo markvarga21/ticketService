@@ -61,7 +61,7 @@ public class SigningService {
         }
         User user = userOptional.get();
         if (!user.getPassword().equals(password)) {
-            return String.format("Wrong password entered for user '%s'", userName);
+            return "Login failed due to incorrect credentials";
         }
 
         if (isSomeoneLoggedIn()) {
