@@ -32,8 +32,6 @@ Mticket-service/src/main/java/com/epam/training/ticketservice/dto/RoomDTO.java,
 ‚
 Rticket-service/src/main/java/com/epam/training/ticketservice/dto/ScreeningDTO.java,0\3\039fa2c77e6e8d909b62cffe1a5af302bcf046d3
 }
-Mticket-service/src/main/java/com/epam/training/ticketservice/dto/SeatDTO.java,2\7\2763cce80382337a6d3f43415a785fd3b025d482
-}
 Mticket-service/src/main/java/com/epam/training/ticketservice/dto/UserDTO.java,b\2\b248820cb7bb50835c09c8b1429c4903e30b1ddf
 „
 Tticket-service/src/main/java/com/epam/training/ticketservice/dto/UserSessionDTO.java,3\7\372556783161dcb451ef4fe643e1d932e690333c

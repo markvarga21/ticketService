@@ -20,11 +20,9 @@ public class SeatDTO {
 
     @Override
     public boolean equals(Object o) {
-        if (o instanceof SeatDTO seatDTO) {
-            return seatDTO.getRoomName().equals(this.roomName)
-                    && seatDTO.getSeatRow().equals(this.seatRow)
-                    && seatDTO.getSeatColumn().equals(this.seatColumn);
-        }
-        return false;
+        SeatDTO seatDTO = (SeatDTO) o;
+        return seatDTO.getRoomName().equals(this.roomName)
+                && seatDTO.getSeatRow().equals(this.seatRow)
+                && seatDTO.getSeatColumn().equals(this.seatColumn);
     }
 }
