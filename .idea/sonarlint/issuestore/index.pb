@@ -83,3 +83,11 @@ Vticket-service/src/main/java/com/epam/training/ticketservice/util/PriceCalculat
 Yticket-service/src/main/java/com/epam/training/ticketservice/util/ScreeningValidator.java,1\e\1e49e6423d75d8db11dfda2b089e3a52dafa3ca1
 ‚
 Rticket-service/src/main/java/com/epam/training/ticketservice/dto/ScreeningDto.java,e\f\ef0536fa9e6a38fbe177b16056f7611f680fdb01
+F
+ticket-service/pom.xml,5\1\51a4c59ed9e767804980c24924d0f9393daf3a94
+’
+bticket-service-acceptance-tests/src/test/java/com/training/epam/ticketservice/at/TestExecutor.java,3\b\3bc801936bb75e242d60eb7e7a03e247455fd495
+I
+ticket-service/.gitignore,3\1\318d525e620558c39a22a5eca34fab34e799fe77
+ˆ
+Xticket-service/src/main/java/com/epam/training/ticketservice/service/SigningService.java,6\b\6b3eec0bbd1b576983a89e85282eebbf56415ebc

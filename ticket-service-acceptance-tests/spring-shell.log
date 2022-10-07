@@ -530,3 +530,13 @@
 1665083759677:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
 1665083759922:delete screening "Spirited Away" Pedersoli "2021-03-14 16:00"
 1665083760181:list screenings
+1665138199255:sign in privileged admin admin
+1665138199531:create room Pedersoli 20 10
+1665138199759:create room Girotti 10 10
+1665138200058:create movie SĂˇtĂˇntangĂł drama 450
+1665138200296:create movie "Spirited Away" animation 125
+1665138200562:sign out
+1665138200852:sign in privileged admin admin
+1665138201135:create screening SĂˇtĂˇntangĂł Pedersoli "2021-03-15 10:45"
+1665138201385:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1665138201643:list screenings
