@@ -59,8 +59,6 @@ Tticket-service/src/main/java/com/epam/training/ticketservice/mapping/UserMapper
 ^ticket-service/src/main/java/com/epam/training/ticketservice/repository/BookingRepository.java,3\b\3b436f9abbf37183febb0ae68b487e7f023cf30f
 †
 Vticket-service/src/main/java/com/epam/training/ticketservice/service/MovieService.java,2\a\2a03de35d5e4cab8d5e9c5f360c0138d36e400d0
-Š
-Zticket-service/src/main/java/com/epam/training/ticketservice/service/ScreeningService.java,b\9\b9ab176696f5997fbc38d4e1c441675765c52f6f
 ‡
 Wticket-service/src/main/java/com/epam/training/ticketservice/util/BookingValidator.java,1\2\12bd2b1af361d44c7227fa428d7270d638bb0b38
 €
@@ -71,8 +69,6 @@ Yticket-service/src/main/java/com/epam/training/ticketservice/util/ScreeningVali
 Rticket-service/src/main/java/com/epam/training/ticketservice/dto/ScreeningDto.java,e\f\ef0536fa9e6a38fbe177b16056f7611f680fdb01
 F
 ticket-service/pom.xml,5\1\51a4c59ed9e767804980c24924d0f9393daf3a94
-’
-bticket-service-acceptance-tests/src/test/java/com/training/epam/ticketservice/at/TestExecutor.java,3\b\3bc801936bb75e242d60eb7e7a03e247455fd495
 I
 ticket-service/.gitignore,3\1\318d525e620558c39a22a5eca34fab34e799fe77
 ˆ
