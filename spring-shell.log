@@ -14,3 +14,38 @@
 1665083504596:create screening Sátántangó Pedersoli "2021-03-15 10:45"
 1665083514970:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
 1665083519014:list screenings
+1665140632703:sign up sanyi asdQWE123
+1665140635416:sign up laci asdQWE123
+1665140638145:sign in privileged admin admin
+1665140641283:create room Pedersoli 20 10
+1665140644903:create room Girotti 10 10
+1665140649639:create movie Sátántangó drama 450
+1665140656441:create movie "Spirited Away" animation 125
+1665140665141:ate screening "Spirited Away" Girotti "2021-03-15 10:00"
+1665140677842:create screening "Spirited Away" Girotti "2021-03-15 10:00"
+1665140681774:create screening Sátántangó Pedersoli \\"2021-03-15 10:45\\"
+1665140686070:create screening Sátántangó Pedersoli "2021-03-15 10:45"
+1665140690101:sign out
+1665140694409:sign in sanyi asdQWE123
+1665140704950:book Sátántangó Pedersoli "2021-03-15 10:45" "5,5"
+1665140839679:sign up sanyi asdQWE123
+1665140843018:sign up laci asdQWE123
+1665140847352:sign in privileged admin admin
+1665140850459:create room Pedersoli 20 10
+1665140853819:create room Girotti 10 10
+1665140858010:create movie Sátántangó drama 450
+1665140862877:create movie "Spirited Away" animation 125
+1665140873872:create screening "Spirited Away" Girotti "2021-03-15 10:00"
+1665140883598:create screening Sátántangó Pedersoli "2021-03-15 10:45"
+1665140888680:sign out
+1665140894992:sign in sanyi asdQWE123
+1665140902736:book Sátántangó Pedersoli "2021-03-15 10:45" "5,5"
+1665140913401:sign out
+1665140918177:sign in privileged admin admin
+1665140926730:update base price 5000
+1665140930657:sign out
+1665140935213:sign in sanyi asdQWE123
+1665140937822:describe account
+1665140941383:stactrace
+1665140944677:describe account
+1665140946876:stacktrace
