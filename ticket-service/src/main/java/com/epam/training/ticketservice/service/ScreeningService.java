@@ -8,10 +8,13 @@ import com.epam.training.ticketservice.util.CompositeKey;
 import com.epam.training.ticketservice.util.ScreeningDateTimeConverter;
 import com.epam.training.ticketservice.util.ScreeningValidator;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -54,11 +57,13 @@ public class ScreeningService {
     }
 
     public List<ScreeningDto> getScreenings() {
-        return this.screeningRepository
-            .findAll()
-            .stream()
-            .map(this.screeningMapper::mapScreeningToDto)
-            .toList();
+        List<ScreeningDto> screenings = new ArrayList<>(this.screeningRepository
+                .findAll()
+                .stream()
+                .map(this.screeningMapper::mapScreeningToDto)
+                .toList());
+        Collections.reverse(screenings);
+        return screenings;
     }
 
     @Transactional
