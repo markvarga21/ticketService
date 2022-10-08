@@ -7,7 +7,6 @@ import com.epam.training.ticketservice.entity.PriceComponent;
 import com.epam.training.ticketservice.entity.ScreeningPriceAttachment;
 
 import com.epam.training.ticketservice.mapping.BasePriceMapper;
-import com.epam.training.ticketservice.mapping.PriceComponentMapper;
 
 import com.epam.training.ticketservice.repository.BasePriceRepository;
 import com.epam.training.ticketservice.repository.PriceComponentRepository;
@@ -31,7 +30,6 @@ public class PricingService {
     private final ScreeningPriceAttachmentRepository screeningPriceAttachmentRepository;
     private final BasePriceMapper basePriceMapper;
     private final SeatConverter seatConverter;
-    private final PriceComponentMapper priceComponentMapper;
 
     @PostConstruct
     private void postConstruct() {

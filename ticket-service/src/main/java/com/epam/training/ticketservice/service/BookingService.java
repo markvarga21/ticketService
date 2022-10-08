@@ -28,7 +28,6 @@ import java.util.logging.Logger;
 @Service
 @RequiredArgsConstructor
 public class BookingService {
-    Logger log = Logger.getLogger(BookingPrice.class.getName());
     private final SeatConverter seatConverter;
     private final SeatMapper seatMapper;
     private final BookingRepository bookingRepository;

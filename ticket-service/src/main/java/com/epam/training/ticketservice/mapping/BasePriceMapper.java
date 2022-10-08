@@ -11,10 +11,6 @@ import org.springframework.stereotype.Component;
 public class BasePriceMapper {
     private final ModelMapper modelMapper;
 
-    public BasePrice convertBasePriceDtoToEntity(BasePriceDto basePriceDto) {
-        return this.modelMapper.map(basePriceDto, BasePrice.class);
-    }
-
     public BasePriceDto convertBasePriceEntityToDto(BasePrice basePrice) {
         return this.modelMapper.map(basePrice, BasePriceDto.class);
     }
