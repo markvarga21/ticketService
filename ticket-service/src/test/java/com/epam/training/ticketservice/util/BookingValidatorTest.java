@@ -26,7 +26,7 @@ class BookingValidatorTest {
     private RoomService roomService;
 
     @Test
-    void testIsValidSeatForRoomShouldReturnFalseWhenInvalidSeats() {
+    public void testIsValidSeatForRoomShouldReturnFalseWhenInvalidSeats() {
         // Given
         String roomName = "roomName";
         RoomDto roomDto = new RoomDto(roomName, 5L, 5L);
@@ -48,7 +48,7 @@ class BookingValidatorTest {
     }
 
     @Test
-    void testIsValidSeatForRoomShouldReturnTrueWhenValidSeats() {
+    public void testIsValidSeatForRoomShouldReturnTrueWhenValidSeats() {
         // Given
         String roomName = "roomName";
         RoomDto roomDto = new RoomDto(roomName, 5L, 5L);
@@ -66,7 +66,7 @@ class BookingValidatorTest {
     }
 
     @Test
-    void testIsSeatFreeShouldReturnFalseWhenOneOfTheSeatsIsOccupied() {
+    public void testIsSeatFreeShouldReturnFalseWhenOneOfTheSeatsIsOccupied() {
         // Given
         String roomName = "room1";
         String userName = "john";
@@ -87,7 +87,7 @@ class BookingValidatorTest {
     }
 
     @Test
-    void testIsSeatFreeShouldReturnTrueWhenBookedSeatIsFree() {
+    public void testIsSeatFreeShouldReturnTrueWhenBookedSeatIsFree() {
         // Given
         String roomName = "room1";
         String userName = "john";
