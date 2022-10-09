@@ -1383,3 +1383,5 @@
 1665243950482:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
 1665243950745:delete screening "Spirited Away" Pedersoli "2021-03-14 16:00"
 1665243951005:list screenings
+1665304690375:sign in privileged admin admin
+1665304690603:describe account
