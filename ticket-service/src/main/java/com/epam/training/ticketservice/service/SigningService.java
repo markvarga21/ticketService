@@ -15,7 +15,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Service
-@Data
 @RequiredArgsConstructor
 public class SigningService {
     private final UserSessionRepository userSessionRepository;

@@ -9,10 +9,12 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
+import java.util.logging.Logger;
 
 @Component
 @RequiredArgsConstructor
 public class ScreeningValidator {
+    Logger log = Logger.getLogger(ScreeningValidator.class.getName());
     private final MovieService movieService;
     private final RoomService roomService;
     private final ScreeningDateTimeConverter converter;

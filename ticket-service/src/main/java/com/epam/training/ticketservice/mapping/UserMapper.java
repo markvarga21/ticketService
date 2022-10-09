@@ -11,10 +11,6 @@ import org.springframework.stereotype.Component;
 public class UserMapper {
     private final ModelMapper modelMapper;
 
-    public UserDto mapUserToDto(User user) {
-        return this.modelMapper.map(user, UserDto.class);
-    }
-
     public User mapUserDtoToEntity(UserDto userDto) {
         return this.modelMapper.map(userDto, User.class);
     }
