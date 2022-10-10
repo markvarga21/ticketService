@@ -14,7 +14,6 @@ import java.util.logging.Logger;
 @Component
 @RequiredArgsConstructor
 public class ScreeningValidator {
-    Logger log = Logger.getLogger(ScreeningValidator.class.getName());
     private final MovieService movieService;
     private final RoomService roomService;
     private final ScreeningDateTimeConverter converter;

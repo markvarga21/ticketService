@@ -1,6 +1,6 @@
 package com.epam.training.ticketservice.entity;
 
-import com.epam.training.ticketservice.util.SeatCompositeKey;
+import com.epam.training.ticketservice.dto.SeatCompositeKey;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

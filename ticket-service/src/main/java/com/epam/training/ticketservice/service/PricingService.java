@@ -14,7 +14,7 @@ import com.epam.training.ticketservice.repository.RoomPriceAttachmentRepository;
 import com.epam.training.ticketservice.repository.MoviePriceAttachmentRepository;
 import com.epam.training.ticketservice.repository.ScreeningPriceAttachmentRepository;
 
-import com.epam.training.ticketservice.util.SeatConverter;
+import com.epam.training.ticketservice.mapping.SeatConverter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

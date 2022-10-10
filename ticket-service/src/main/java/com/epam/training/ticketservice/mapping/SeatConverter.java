@@ -1,4 +1,4 @@
-package com.epam.training.ticketservice.util;
+package com.epam.training.ticketservice.mapping;
 
 import com.epam.training.ticketservice.dto.SeatDto;
 import org.springframework.stereotype.Component;
