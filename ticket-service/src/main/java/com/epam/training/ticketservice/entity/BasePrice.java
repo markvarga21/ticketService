@@ -12,6 +12,8 @@ import javax.persistence.Id;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class BasePrice {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

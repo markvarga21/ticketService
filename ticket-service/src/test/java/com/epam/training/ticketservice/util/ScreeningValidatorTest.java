@@ -235,8 +235,4 @@ class ScreeningValidatorTest {
                 )
         );
     }
-
-    @Test
-    void isPausePresent() {
-    }
 }
