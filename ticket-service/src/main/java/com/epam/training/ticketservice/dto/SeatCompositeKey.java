@@ -1,4 +1,4 @@
-package com.epam.training.ticketservice.util;
+package com.epam.training.ticketservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

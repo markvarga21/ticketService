@@ -1,14 +1,10 @@
 
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 ‘
 aticket-service/src/main/java/com/epam/training/ticketservice/configuration/BeanConfiguration.java,d\5\d590e4b024ebf0f79cf379340b6a81bd6ebdf651
 ”
 dticket-service/src/main/java/com/epam/training/ticketservice/configuration/CustomPromptProvider.java,b\6\b653859d6a9b6103a4249f1e03b8478a1c781404
 …
 Uticket-service/src/main/java/com/epam/training/ticketservice/service/RoomService.java,e\a\ea5d97fba55ee697e7a9d9a7ca2ede1de69f605a
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 X
 (ticket-service/checkstyle/checkstyle.xml,a\6\a6beb5920c4f70801cf86d537773934788e195f5
 @
@@ -43,8 +39,6 @@ Yticket-service/src/main/java/com/epam/training/ticketservice/mapping/BasePriceM
 Uticket-service/src/main/java/com/epam/training/ticketservice/mapping/MovieMapper.java,4\f\4f9f857d85bd16f839c1525b7997bfbc242c3276
 €
 Pticket-service/src/main/java/com/epam/training/ticketservice/entity/Booking.java,0\8\0843bf1aa5dfb9e1c4ef0ab0e599bfa2c6d04eff
-Ž
-^ticket-service/src/main/java/com/epam/training/ticketservice/mapping/PriceComponentMapper.java,0\e\0ea1f1fb7891624f01d722116a84ddca64bc9a99
 „
 Tticket-service/src/main/java/com/epam/training/ticketservice/mapping/RoomMapper.java,f\4\f49a801b334dec4410d0c0d606c27b348a283ead
 ‰
@@ -61,14 +55,8 @@ Tticket-service/src/main/java/com/epam/training/ticketservice/mapping/UserMapper
 Vticket-service/src/main/java/com/epam/training/ticketservice/service/MovieService.java,2\a\2a03de35d5e4cab8d5e9c5f360c0138d36e400d0
 ‡
 Wticket-service/src/main/java/com/epam/training/ticketservice/util/BookingValidator.java,1\2\12bd2b1af361d44c7227fa428d7270d638bb0b38
-€
-Pticket-service/src/main/java/com/epam/training/ticketservice/util/Formatter.java,f\e\fefd9bbd0a55b29f9c8ee3083e2a78ee3763e732
-‰
-Yticket-service/src/main/java/com/epam/training/ticketservice/util/ScreeningValidator.java,1\e\1e49e6423d75d8db11dfda2b089e3a52dafa3ca1
 ‚
 Rticket-service/src/main/java/com/epam/training/ticketservice/dto/ScreeningDto.java,e\f\ef0536fa9e6a38fbe177b16056f7611f680fdb01
-F
-ticket-service/pom.xml,5\1\51a4c59ed9e767804980c24924d0f9393daf3a94
 I
 ticket-service/.gitignore,3\1\318d525e620558c39a22a5eca34fab34e799fe77
 ˆ

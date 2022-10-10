@@ -4,11 +4,10 @@ import com.epam.training.ticketservice.dto.ScreeningDto;
 import com.epam.training.ticketservice.entity.Screening;
 import com.epam.training.ticketservice.mapping.ScreeningMapper;
 import com.epam.training.ticketservice.repository.ScreeningRepository;
-import com.epam.training.ticketservice.util.CompositeKey;
+import com.epam.training.ticketservice.dto.CompositeKey;
 import com.epam.training.ticketservice.util.ScreeningDateTimeConverter;
 import com.epam.training.ticketservice.util.ScreeningValidator;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

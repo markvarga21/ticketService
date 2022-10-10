@@ -16,14 +16,13 @@ import com.epam.training.ticketservice.repository.SeatRepository;
 import com.epam.training.ticketservice.util.BookingValidator;
 import com.epam.training.ticketservice.util.PriceCalculator;
 import com.epam.training.ticketservice.util.ScreeningDateTimeConverter;
-import com.epam.training.ticketservice.util.SeatConverter;
+import com.epam.training.ticketservice.mapping.SeatConverter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 @Service
 @RequiredArgsConstructor
