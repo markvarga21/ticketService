@@ -9,8 +9,6 @@ X
 (ticket-service/checkstyle/checkstyle.xml,a\6\a6beb5920c4f70801cf86d537773934788e195f5
 @
 spring-shell.log,6\5\658c171bf29482af054de1733b18218a851dd83f
-W
-'ticket-service-acceptance-tests/pom.xml,f\5\f56c149774077eedca12fd31f6af2082c90cdf53
 –
 fticket-service-acceptance-tests/src/test/java/com/training/epam/ticketservice/at/ProcessUnderTest.java,7\8\78af238dab5fab65bd94d1041558b225e7f7b102
 Ÿ
@@ -43,8 +41,6 @@ I
 ticket-service/.gitignore,3\1\318d525e620558c39a22a5eca34fab34e799fe77
 ˆ
 Xticket-service/src/main/java/com/epam/training/ticketservice/service/SigningService.java,6\b\6b3eec0bbd1b576983a89e85282eebbf56415ebc
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 ‰
 Yticket-service/src/main/java/com/epam/training/ticketservice/util/ScreeningValidator.java,1\e\1e49e6423d75d8db11dfda2b089e3a52dafa3ca1
 L
@@ -57,8 +53,6 @@ Pticket-service/src/main/java/com/epam/training/ticketservice/util/Formatter.jav
 Rticket-service/src/main/java/com/epam/training/ticketservice/dto/CompositeKey.java,3\e\3ecec521c0a1546edb189cd2d67af519c401216c
 •
 eticket-service/src/main/java/com/epam/training/ticketservice/controller/SigningCommandController.java,c\4\c4a56ee8586e3c5396a4674321d9048221aa6c6e
-Š
-Zticket-service/src/main/java/com/epam/training/ticketservice/service/ScreeningService.java,b\9\b9ab176696f5997fbc38d4e1c441675765c52f6f
 }
 Mticket-service/src/main/java/com/epam/training/ticketservice/dto/SeatDto.java,c\9\c9d2045bedc943a31385ba0945af25be305d6a5c
 ‚
@@ -101,7 +95,5 @@ aticket-service/src/main/java/com/epam/training/ticketservice/entity/ScreeningPr
 ]ticket-service/src/test/java/com/epam/training/ticketservice/util/ScreeningValidatorTest.java,e\9\e9946ab7390781efe6378490d7200f4d42dc974a
 Œ
 \ticket-service/src/main/java/com/epam/training/ticketservice/entity/RoomPriceAttachment.java,d\4\d4f7efab2acca65703faa2b8954fa4fcfebd67d7
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ˆ
 Xticket-service/src/main/java/com/epam/training/ticketservice/service/PricingService.java,6\2\62ca9b63318c4448734944a552a4586dfe38aab6
