@@ -9,10 +9,6 @@ X
 (ticket-service/checkstyle/checkstyle.xml,a\6\a6beb5920c4f70801cf86d537773934788e195f5
 @
 spring-shell.log,6\5\658c171bf29482af054de1733b18218a851dd83f
-–
-fticket-service-acceptance-tests/src/test/java/com/training/epam/ticketservice/at/ProcessUnderTest.java,7\8\78af238dab5fab65bd94d1041558b225e7f7b102
-Ÿ
-oticket-service-acceptance-tests/src/test/java/com/training/epam/ticketservice/at/GenericCliProcessStepDefs.java,4\4\44db52b60183e62c4365f435d7cc783dbef7d050
 ~
 Nticket-service/src/main/java/com/epam/training/ticketservice/dto/MovieDto.java,d\6\d613afb321c2b1a98a1333d03f13f8815655cf42
 ‡
