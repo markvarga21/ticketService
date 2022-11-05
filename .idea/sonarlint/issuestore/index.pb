@@ -69,10 +69,6 @@ Wticket-service/src/main/java/com/epam/training/ticketservice/util/BookingValida
 ^ticket-service/src/main/java/com/epam/training/ticketservice/repository/BookingRepository.java,3\b\3b436f9abbf37183febb0ae68b487e7f023cf30f
 ‚
 Rticket-service/src/main/java/com/epam/training/ticketservice/dto/BasePriceDto.java,d\0\d0fff8bd2310815edfb26c5e44a419eb1ce21ca2
-”
-dticket-service/src/test/java/com/epam/training/ticketservice/repository/BasePriceRepositoryTest.java,5\a\5a861fe6704688d8716fd40d1a53478d484c958e
-Œ
-\ticket-service/src/test/java/com/epam/training/ticketservice/service/BookingServiceTest.java,b\2\b2138abc9b4ee457b8eb9398fadd29dd84f574e7
 €
 Pticket-service/src/main/java/com/epam/training/ticketservice/entity/Booking.java,0\8\0843bf1aa5dfb9e1c4ef0ab0e599bfa2c6d04eff
 ‚
@@ -93,3 +89,7 @@ aticket-service/src/main/java/com/epam/training/ticketservice/entity/ScreeningPr
 \ticket-service/src/main/java/com/epam/training/ticketservice/entity/RoomPriceAttachment.java,d\4\d4f7efab2acca65703faa2b8954fa4fcfebd67d7
 ˆ
 Xticket-service/src/main/java/com/epam/training/ticketservice/service/PricingService.java,6\2\62ca9b63318c4448734944a552a4586dfe38aab6
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+W
+'ticket-service-acceptance-tests/pom.xml,f\5\f56c149774077eedca12fd31f6af2082c90cdf53

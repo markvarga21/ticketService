@@ -228,9 +228,7 @@ class BookingServiceTest {
         BookingDto bookingDto = new BookingDto(userName, screeningDto, seatDto);
         BookingPrice bookingPrice = new BookingPrice(1L, roomName, movieName, timeOfScreeningString, basePrice);
         Optional<BookingPrice> bookingPriceOptional = Optional.of(bookingPrice);
-        String expected = """
-                Your previous bookings are
-                Seats (1,1) on Avenger in room bigRoom starting at 2022-12-12 10:10 for 1500 HUF""";
+        String expected = "Your previous bookings are\nSeats (1,1) on Avenger in room bigRoom starting at 2022-12-12 10:10 for 1500 HUF";
 
 
         // When
