@@ -1,9 +1,0 @@
-
-f
-java:S3655S"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ºÇÄ
-‰
-java:S3655]"nCall "bookingEntitiesOptional.isPresent()" or "!bookingEntitiesOptional.isEmpty()" before accessing the value.(õÇÛÎûÿÿÿÿ
-f
-java:S3655u"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¥Ñî«
-Š
-java:S3655‚"nCall "priceForBookingOptional.isPresent()" or "!priceForBookingOptional.isEmpty()" before accessing the value.(Îƒ¤Ìüÿÿÿÿ

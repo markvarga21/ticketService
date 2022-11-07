@@ -219,7 +219,7 @@ class SigningServiceTest {
     @Test
     public void testLogInUserWhenCorrectCredentials() {
         // Given
-        String expected = "Login successful!";
+        String expected = "Signed in with account 'john'";
         String userName = "john";
         String passWord = "pass";
         User dummyUser = new User();

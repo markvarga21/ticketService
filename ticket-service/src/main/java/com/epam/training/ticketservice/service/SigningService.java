@@ -69,7 +69,7 @@ public class SigningService {
 
         UserSessionDto userSessionDto = new UserSessionDto(userName);
         this.userSessionRepository.save(this.userSessionMapper.mapUserSessionDtoToEntity(userSessionDto));
-        return "Login successful!";
+        return String.format("Signed in with account '%s'", userName);
     }
 
     @Transactional

@@ -23,6 +23,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -47,7 +48,7 @@ public class BookingService {
         List<Booking> bookingsToSave = new ArrayList<>();
         ScreeningDto screeningDto = new ScreeningDto(movieTitle, roomName, timeOfScreening);
         List<BookingDto> bookingsForScreening = this.getBookingsForScreening(screeningDto);
-        final String seatsString = String.join(", ", seats.stream().map(SeatDto::toString).toList());
+        final String seatsString = seats.stream().map(SeatDto::toString).collect(Collectors.joining(", "));
         for (SeatDto seatDto : seats) {
             Seat seat = this.seatMapper.convertSeatDtoToEntity(seatDto);
             if (!this.bookingValidator.isValidSeatForRoom(roomName, seatDto)) {
@@ -85,7 +86,7 @@ public class BookingService {
                 .get()
                 .stream()
                 .map(this.bookingMapper::convertBookingEntityToDto)
-                .toList();
+                .collect(Collectors.toList());
     }
 
     public String getBookingsForUser(String userName) {
@@ -97,12 +98,12 @@ public class BookingService {
         var bookingDtoList = bookingEntities
                 .stream()
                 .map(this.bookingMapper::convertBookingEntityToDto)
-                .toList();
+                .collect(Collectors.toList());
         List<ScreeningDto> bookedScreenings = bookingDtoList
                 .stream()
                 .map(BookingDto::getScreeningDto)
                 .distinct()
-                .toList();
+                .collect(Collectors.toList());
 
         return this.formatBookingListForScreenings(bookedScreenings);
     }
@@ -119,8 +120,8 @@ public class BookingService {
                     .map(this.bookingMapper::convertBookingEntityToDto)
                     .map(BookingDto::getBookedSeat)
                     .map(SeatDto::toString)
-                    .toList();
-            var bookedSeatsString = String.join(", ", bookedSeats);
+                    .collect(Collectors.toList());
+            String bookedSeatsString = String.join(", ", bookedSeats);
             var priceForBookingOptional = this.bookingPriceRepository
                     .getBookingPriceByRoomNameAndMovieNameAndScreeningDate(
                             screenings.get(i).getRoomName(),
