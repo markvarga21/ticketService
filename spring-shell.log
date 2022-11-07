@@ -53,3 +53,7 @@
 1666106264715:stacktrace
 1666106579768:sign in privileged admin admin
 1666106607729:sign out
+1667825826039:sign in privileged admin admin
+1667825830307:create movie Sátántangó drama 450
+1667825834373:delete movie Sátántangó
+1667825838295:list movies

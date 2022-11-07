@@ -15,6 +15,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -56,11 +57,11 @@ public class ScreeningService {
     }
 
     public List<ScreeningDto> getScreenings() {
-        List<ScreeningDto> screenings = new ArrayList<>(this.screeningRepository
+        List<ScreeningDto> screenings = this.screeningRepository
                 .findAll()
                 .stream()
                 .map(this.screeningMapper::mapScreeningToDto)
-                .toList());
+                .collect(Collectors.toList());
         Collections.reverse(screenings);
         return screenings;
     }
@@ -76,6 +77,6 @@ public class ScreeningService {
         return this.getScreenings()
                 .stream()
                 .filter(screeningDTO -> screeningDTO.getRoomName().equals(roomName))
-                .toList();
+                .collect(Collectors.toList());
     }
 }

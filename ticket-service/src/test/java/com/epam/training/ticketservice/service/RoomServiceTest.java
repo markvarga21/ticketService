@@ -12,6 +12,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -51,7 +52,7 @@ class RoomServiceTest {
         List<Room> rooms = List.of(room1, room2);
         List<RoomDto> expected = Stream.of(room1, room2)
                                 .map(this.roomMapper::mapRoomToDto)
-                                .toList();
+                                .collect(Collectors.toList());
 
         // When
         when(this.roomRepository.findAll())
