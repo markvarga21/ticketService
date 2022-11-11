@@ -81,8 +81,12 @@ public class BookingService {
     }
 
     private List<BookingDto> getBookingsForScreening(ScreeningDto screeningDto) {
-        return this.bookingRepository
-                .getBookingsByScreening(this.screeningMapper.mapScreeningDtoToEntity(screeningDto))
+        var bookingsByScreening = this.bookingRepository
+                .getBookingsByScreening(this.screeningMapper.mapScreeningDtoToEntity(screeningDto));
+        if (bookingsByScreening.isEmpty()) {
+            return List.of();
+        }
+        return bookingsByScreening
                 .get()
                 .stream()
                 .map(this.bookingMapper::convertBookingEntityToDto)
@@ -91,6 +95,9 @@ public class BookingService {
 
     public String getBookingsForUser(String userName) {
         var bookingEntitiesOptional = this.bookingRepository.getBookingsByUserName(userName);
+        if (bookingEntitiesOptional.isEmpty()) {
+            return "Booking list is empty!";
+        }
         if (bookingEntitiesOptional.get().isEmpty()) {
             return "You have not booked any tickets yet";
         }

@@ -57,10 +57,14 @@ public class MovieService {
     }
 
     public Long getMovieLengthForTitle(String movieName) {
-        return this.getMovies()
+        var movie = this.getMovies()
                 .stream()
                 .filter(movieDTO1 -> movieDTO1.getTitle().equals(movieName))
-                .findFirst()
+                .findFirst();
+        if (movie.isEmpty()) {
+            return 0L;
+        }
+        return movie
                 .get()
                 .getLength();
     }

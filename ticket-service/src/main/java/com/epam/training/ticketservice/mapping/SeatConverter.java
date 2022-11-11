@@ -9,13 +9,18 @@ import java.util.stream.Collectors;
 
 @Component
 public class SeatConverter {
-    public List<SeatDto> convertSeatStringToList(String seats, String roomName) {
-        return Arrays.stream(seats.split(" "))
-                .map(s -> new SeatDto(roomName, Long.valueOf(s.split(",")[0]), Long.valueOf(s.split(",")[1])))
+    public List<SeatDto> convertSeatStringToList(final String seats, final String roomName) {
+        String[] split = seats.split(" ");
+        return Arrays.stream(split)
+                .map(s -> {
+                    final Long seatRow = Long.valueOf(s.split(",")[0]);
+                    Long seatColumn = Long.valueOf(s.split(",")[1]);
+                    return new SeatDto(roomName, seatRow, seatColumn);
+                })
                 .collect(Collectors.toList());
     }
 
-    public int getSeatNumberOfString(String seats) {
+    public int getSeatNumberOfString(final String seats) {
         return seats.split(" ").length;
     }
 }

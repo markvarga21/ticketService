@@ -1,200 +1,94 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="17" name="com.training.epam.ticketservice.at.TestExecutor" time="3.441" errors="0" skipped="0">
+<testsuite tests="30" failures="0" name="com.training.epam.ticketservice.at.TestExecutor" time="268.996" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="java.vm.version" value="17.0.4+11-LTS-179"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="E:\Egyetem\5. felev\Java fejlesztés a gyakorlatban\ticketService1018\ticketService"/>
+    <property name="java.vm.version" value="17.0.4.1+1-LTS-2"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\mark cuccok\java fejlesztes a gyakorlatban\ticketService"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="user.country" value="HU"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.script" value=""/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="user.dir" value="E:\Egyetem\5. felev\Java fejlesztés a gyakorlatban\ticketService1018\ticketService"/>
+    <property name="user.dir" value="D:\mark cuccok\java fejlesztes a gyakorlatban\ticketService"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.runtime.version" value="17.0.4+11-LTS-179"/>
+    <property name="java.runtime.version" value="17.0.4.1+1-LTS-2"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\vmark\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\Tunde\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="E:\Libs\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin\m2.conf"/>
-    <property name="sun.jnu.encoding" value="Cp1250"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;E:\Libs\gradle-7.4.2\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;E:\Libs\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\CMake\bin;C:\Qt\6.3.2\mingw_64\lib;C:\Qt\6.3.2\mingw_64\bin;C:\Program Files\dotnet\;C:\Program Files\Tesseract-OCR;C:\Users\vmark\anaconda3;C:\Users\vmark\anaconda3\Library\mingw-w64\bin;C:\Users\vmark\anaconda3\Library\usr\bin;C:\Users\vmark\anaconda3\Library\bin;C:\Users\vmark\anaconda3\Scripts;C:\Users\vmark\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\vmark\AppData\Local\Programs\Python\Python310\;C:\Users\vmark\AppData\Local\Microsoft\WindowsApps;E:\Programs\IntelliJ IDEA 2022.2\bin;E:\Programs\Microsoft VS Code\bin;C:\Users\vmark\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\vmark\AppData\Local\Microsoft\WindowsApps;C:\Users\vmark\AppData\Roaming\npm;C:\MinGW\bin;C:\Users\vmark\.dotnet\tools;C:\Program Files\JetBrains\PyCharm 2022.2.3\bin;;."/>
-    <property name="maven.conf" value="E:\Libs\apache-maven-3.8.6-bin\apache-maven-3.8.6/conf"/>
+    <property name="classworlds.conf" value="D:\mark cuccok\libs\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Tunde\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Tunde\AppData\Local\Programs\Python\Python310\;C:\Users\Tunde\AppData\Local\Microsoft\WindowsApps;D:\mark cuccok\libs\gradle-7.5.1-bin\gradle-7.5.1\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.1\bin;;D:\mark cuccok\libs\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;;C:\Users\Tunde\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="maven.conf" value="D:\mark cuccok\libs\apache-maven-3.8.6-bin\apache-maven-3.8.6/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="E:\Libs\apache-maven-3.8.6-bin\apache-maven-3.8.6\lib\jansi-native"/>
-    <property name="user.home" value="C:\Users\vmark"/>
-    <property name="user.timezone" value="Europe/Budapest"/>
-    <property name="file.encoding" value="Cp1250"/>
+    <property name="library.jansi.path" value="D:\mark cuccok\libs\apache-maven-3.8.6-bin\apache-maven-3.8.6\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Tunde"/>
+    <property name="user.timezone" value="Europe/Bucharest"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="17"/>
-    <property name="java.class.path" value="E:\Libs\apache-maven-3.8.6-bin\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar"/>
-    <property name="user.name" value="vmark"/>
+    <property name="java.class.path" value="D:\mark cuccok\libs\apache-maven-3.8.6-bin\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="user.name" value="Tunde"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.4"/>
-    <property name="user.language" value="hu"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify -P requirements-grade5"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.4.1"/>
+    <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="17.0.4"/>
-    <property name="native.encoding" value="Cp1250"/>
+    <property name="java.version" value="17.0.4.1"/>
+    <property name="native.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="sun.stderr.encoding" value="cp852"/>
-    <property name="maven.home" value="E:\Libs\apache-maven-3.8.6-bin\apache-maven-3.8.6"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="D:\mark cuccok\libs\apache-maven-3.8.6-bin\apache-maven-3.8.6"/>
     <property name="file.separator" value="\"/>
-    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.version.date" value="2022-08-18"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.stdout.encoding" value="cp852"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="allow creating accounts and logging in" name="the admin account exists by default and can be logged in with the correct password" time="0.494">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/accounts.feature:4)
-</failure>
-  </testcase>
-  <testcase classname="allow creating accounts and logging in" name="the admin account can be signed out" time="0.164">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/accounts.feature:4)
-</failure>
-  </testcase>
-  <testcase classname="allow creating accounts and logging in" name="the admin account can not be logged in with incorrect password" time="0.19">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/accounts.feature:4)
-</failure>
-  </testcase>
-  <testcase classname="allows creating movie descriptions" name="an admin user can create and list movies" time="0.201">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/movies.feature:3)
-</failure>
-  </testcase>
-  <testcase classname="allows creating movie descriptions" name="an admin user can update a movie" time="0.206">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/movies.feature:3)
-</failure>
-  </testcase>
-  <testcase classname="allows creating movie descriptions" name="an admin user can delete a movie" time="0.181">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/movies.feature:3)
-</failure>
-  </testcase>
-  <testcase classname="allows creating movie descriptions" name="an unauthenticated user can list movies" time="0.185">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/movies.feature:3)
-</failure>
-  </testcase>
-  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an admin user can create and list rooms" time="0.188">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/rooms.feature:4)
-</failure>
-  </testcase>
-  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an admin user can update a room" time="0.172">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/rooms.feature:4)
-</failure>
-  </testcase>
-  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an admin user can delete a room" time="0.175">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/rooms.feature:4)
-</failure>
-  </testcase>
-  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an unauthenticated user can list rooms" time="0.184">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/rooms.feature:4)
-</failure>
-  </testcase>
-  <testcase classname="allows creating, deleting and listing screenings" name="The admin user can create and query screenings" time="0.188">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:3)
-</failure>
-  </testcase>
-  <testcase classname="allows creating, deleting and listing screenings" name="The admin can not create overlapping screenings in the same room" time="0.184">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:3)
-</failure>
-  </testcase>
-  <testcase classname="allows creating, deleting and listing screenings" name="The admin can create overlapping screenings in different rooms" time="0.171">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:3)
-</failure>
-  </testcase>
-  <testcase classname="allows creating, deleting and listing screenings" name="The admin can not create screenings during a 10 minute long breaks after another screening in the same room" time="0.187">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:3)
-</failure>
-  </testcase>
-  <testcase classname="allows creating, deleting and listing screenings" name="The admin can create screenings even if there is a break after a screening in a different room" time="0.199">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:3)
-</failure>
-  </testcase>
-  <testcase classname="allows creating, deleting and listing screenings" name="The admin user can delete screenings" time="0.172">
-    <failure message="The service is not running." type="java.lang.AssertionError">java.lang.AssertionError: The service is not running.
-	at com.training.epam.ticketservice.at.ProcessUnderTest.verifyProcessIsRunning(ProcessUnderTest.java:92)
-	at com.training.epam.ticketservice.at.ProcessUnderTest.run(ProcessUnderTest.java:37)
-	at com.training.epam.ticketservice.at.GenericCliProcessStepDefs.applicationStarted(GenericCliProcessStepDefs.java:27)
-	at ✽.the application is started(file:///E:/Egyetem/5.%20felev/Java%20fejlesztés%20a%20gyakorlatban/ticketService1018/ticketService/ticket-service-acceptance-tests/src/test/resources/features/screenings.feature:3)
-</failure>
-  </testcase>
+  <testcase classname="allow creating accounts and logging in" name="the admin account exists by default and can be logged in with the correct password" time="8.43"/>
+  <testcase classname="allow creating accounts and logging in" name="the admin account can be signed out" time="7.479"/>
+  <testcase classname="allow creating accounts and logging in" name="the admin account can not be logged in with incorrect password" time="7.32"/>
+  <testcase classname="allow creating accounts and logging in" name="non-privileged accounts can be created and logged in with the correct password" time="7.774"/>
+  <testcase classname="allow creating accounts and logging in" name="non-privileged accounts can not be logged in with the incorrect password" time="7.464"/>
+  <testcase classname="allow creating accounts and logging in" name="non-privileged accounts can be signed out" time="7.808"/>
+  <testcase classname="allows users to book tickets for screenings, and show booking history" name="an authenticated user can book a ticket for a screening" time="10.455"/>
+  <testcase classname="allows users to book tickets for screenings, and show booking history" name="an authenticated user can not book a ticket if at least one of the seats is already taken" time="10.872"/>
+  <testcase classname="allows users to book tickets for screenings, and show booking history" name="the price of the ticket in the history should not change if pricing changes after the booking" time="11.44"/>
+  <testcase classname="allows creating movie descriptions" name="an admin user can create and list movies" time="7.908"/>
+  <testcase classname="allows creating movie descriptions" name="an admin user can update a movie" time="7.608"/>
+  <testcase classname="allows creating movie descriptions" name="an admin user can delete a movie" time="7.494"/>
+  <testcase classname="allows creating movie descriptions" name="an unauthenticated user can list movies" time="7.849"/>
+  <testcase classname="allows creating movie descriptions" name="an authenticated, non-privileged user can list movies" time="8.55"/>
+  <testcase classname="allows creating pricing components and assigning them to rooms, movies and screenings" name="a default per seat per screening price is defined to be 1500 HUF and is used in the calculation of the price of each seat" time="9.606"/>
+  <testcase classname="allows creating pricing components and assigning them to rooms, movies and screenings" name="the admin user can change the default per seat per screening price" time="10.67"/>
+  <testcase classname="allows creating pricing components and assigning them to rooms, movies and screenings" name="the admin user can create price component and assign it to a movie" time="10.832"/>
+  <testcase classname="allows creating pricing components and assigning them to rooms, movies and screenings" name="the admin user can create price component and assign it to a room" time="10.461"/>
+  <testcase classname="allows creating pricing components and assigning them to rooms, movies and screenings" name="the admin user can create price component and assign it to a screening" time="10.634"/>
+  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an admin user can create and list rooms" time="7.674"/>
+  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an admin user can update a room" time="7.781"/>
+  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an admin user can delete a room" time="7.723"/>
+  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an unauthenticated user can list rooms" time="7.716"/>
+  <testcase classname="allow creating, reading, updating and deleting rooms where the screenings will happen" name="an authenticated, non-privileged user can list rooms" time="8.301"/>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin user can create and query screenings" time="9.502"/>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin can not create overlapping screenings in the same room" time="9.283"/>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin can create overlapping screenings in different rooms" time="9.436"/>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin can not create screenings during a 10 minute long breaks after another screening in the same room" time="9.3"/>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin can create screenings even if there is a break after a screening in a different room" time="12.049"/>
+  <testcase classname="allows creating, deleting and listing screenings" name="The admin user can delete screenings" time="9.577"/>
 </testsuite>
