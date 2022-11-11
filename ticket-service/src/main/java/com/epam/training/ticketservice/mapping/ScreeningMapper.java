@@ -6,24 +6,34 @@ import com.epam.training.ticketservice.util.ScreeningDateTimeConverter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+
 @Component
 @RequiredArgsConstructor
 public class ScreeningMapper {
     private final ScreeningDateTimeConverter converter;
 
-    public ScreeningDto mapScreeningToDto(Screening screening) {
+    public ScreeningDto mapScreeningToDto(final Screening screening) {
+        final String movieName = screening.getMovieName();
+        final String roomName = screening.getRoomName();
+        final LocalDateTime timeOfScreening1 = screening.getTimeOfScreening();
+        final String timeOfScreening = converter.convertScreeningDateToString(timeOfScreening1);
         return new ScreeningDto(
-                screening.getMovieName(),
-                screening.getRoomName(),
-                this.converter.convertScreeningDateToString(screening.getTimeOfScreening())
+                movieName,
+                roomName,
+                timeOfScreening
         );
     }
 
-    public Screening mapScreeningDtoToEntity(ScreeningDto screeningDto) {
+    public Screening mapScreeningDtoToEntity(final ScreeningDto screeningDto) {
+        final String movieName = screeningDto.getMovieName();
+        final String roomName = screeningDto.getRoomName();
+        final String timeOfScreening1 = screeningDto.getTimeOfScreening();
+        final LocalDateTime timeOfScreening = converter.convertScreeningTimeString(timeOfScreening1);
         return new Screening(
-                screeningDto.getMovieName(),
-                screeningDto.getRoomName(),
-                this.converter.convertScreeningTimeString(screeningDto.getTimeOfScreening())
+                movieName,
+                roomName,
+                timeOfScreening
         );
     }
 }

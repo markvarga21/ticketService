@@ -11,11 +11,11 @@ import org.springframework.stereotype.Component;
 public class MovieMapper {
     private final ModelMapper modelMapper;
 
-    public MovieDto mapMovieToDto(Movie movie) {
+    public MovieDto mapMovieToDto(final Movie movie) {
         return this.modelMapper.map(movie, MovieDto.class);
     }
 
-    public Movie mapMovieDtoToEntity(MovieDto movieDto) {
+    public Movie mapMovieDtoToEntity(final MovieDto movieDto) {
         return this.modelMapper.map(movieDto, Movie.class);
     }
 }

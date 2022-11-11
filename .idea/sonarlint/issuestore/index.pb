@@ -1,6 +1,4 @@
 
-”
-dticket-service/src/main/java/com/epam/training/ticketservice/configuration/CustomPromptProvider.java,b\6\b653859d6a9b6103a4249f1e03b8478a1c781404
 X
 (ticket-service/checkstyle/checkstyle.xml,a\6\a6beb5920c4f70801cf86d537773934788e195f5
 @
@@ -15,12 +13,6 @@ Mticket-service/src/main/java/com/epam/training/ticketservice/dto/RoomDto.java,
 Mticket-service/src/main/java/com/epam/training/ticketservice/dto/UserDto.java,c\5\c517d0d1c2fcfb691be2208472e9ea3194075956
 „
 Tticket-service/src/main/java/com/epam/training/ticketservice/dto/UserSessionDto.java,a\c\acd30e7d20f8ab78022b4d1b09584193d7fdef44
-„
-Tticket-service/src/main/java/com/epam/training/ticketservice/mapping/SeatMapper.java,0\6\060742efbce150edae12c970d7165181a7bb887d
-„
-Tticket-service/src/main/java/com/epam/training/ticketservice/mapping/UserMapper.java,3\9\392f4d4eee35d3b074e418f3da3e52fba2b92ac4
-‹
-[ticket-service/src/main/java/com/epam/training/ticketservice/mapping/UserSessionMapper.java,9\9\99992d22b043c1380cd883952206f2df8ed1e37f
 I
 ticket-service/.gitignore,3\1\318d525e620558c39a22a5eca34fab34e799fe77
 L
@@ -39,8 +31,6 @@ Uticket-service/src/main/java/com/epam/training/ticketservice/entity/BookingPric
 cticket-service/src/main/java/com/epam/training/ticketservice/repository/BookingPriceRepository.java,e\4\e401ecd254674cdd719b34eddd34ef0f6c6b027d
 Ž
 ^ticket-service/src/main/java/com/epam/training/ticketservice/repository/BookingRepository.java,3\b\3b436f9abbf37183febb0ae68b487e7f023cf30f
-‚
-Rticket-service/src/main/java/com/epam/training/ticketservice/dto/BasePriceDto.java,d\0\d0fff8bd2310815edfb26c5e44a419eb1ce21ca2
 €
 Pticket-service/src/main/java/com/epam/training/ticketservice/entity/Booking.java,0\8\0843bf1aa5dfb9e1c4ef0ab0e599bfa2c6d04eff
 ‚
@@ -59,10 +49,6 @@ aticket-service/src/main/java/com/epam/training/ticketservice/entity/ScreeningPr
 ]ticket-service/src/test/java/com/epam/training/ticketservice/util/ScreeningValidatorTest.java,e\9\e9946ab7390781efe6378490d7200f4d42dc974a
 Œ
 \ticket-service/src/main/java/com/epam/training/ticketservice/entity/RoomPriceAttachment.java,d\4\d4f7efab2acca65703faa2b8954fa4fcfebd67d7
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-W
-'ticket-service-acceptance-tests/pom.xml,f\5\f56c149774077eedca12fd31f6af2082c90cdf53
 –
 fticket-service-acceptance-tests/src/test/java/com/training/epam/ticketservice/at/ProcessUnderTest.java,7\8\78af238dab5fab65bd94d1041558b225e7f7b102
 Ÿ

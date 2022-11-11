@@ -11,11 +11,11 @@ import org.springframework.stereotype.Component;
 public class RoomMapper {
     private final ModelMapper modelMapper;
 
-    public RoomDto mapRoomToDto(Room room) {
+    public RoomDto mapRoomToDto(final Room room) {
         return this.modelMapper.map(room, RoomDto.class);
     }
 
-    public Room mapRoomDtoToEntity(RoomDto roomDto) {
+    public Room mapRoomDtoToEntity(final RoomDto roomDto) {
         return this.modelMapper.map(roomDto, Room.class);
     }
 }
