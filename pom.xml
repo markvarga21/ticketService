@@ -38,7 +38,7 @@
                 <requirements.fail-build-on-checkstyle-error>true</requirements.fail-build-on-checkstyle-error>
                 <requirements.jacoco-line-coverage>0.4</requirements.jacoco-line-coverage>
                 <requirements.jacoco-branch-coverage>0.4</requirements.jacoco-branch-coverage>
-                <requirements.cucumber-tags>@grade3-requirement</requirements.cucumber-tags>
+                <requirements.cucumber-tags>@grade2-requirement or @grade3-requirement</requirements.cucumber-tags>
             </properties>
         </profile>
         <profile>
@@ -47,7 +47,8 @@
                 <requirements.fail-build-on-checkstyle-error>true</requirements.fail-build-on-checkstyle-error>
                 <requirements.jacoco-line-coverage>0.5</requirements.jacoco-line-coverage>
                 <requirements.jacoco-branch-coverage>0.5</requirements.jacoco-branch-coverage>
-                <requirements.cucumber-tags>@grade4-requirement</requirements.cucumber-tags>
+                <requirements.cucumber-tags>@grade2-requirement or @grade3-requirement or @grade4-requirement
+                </requirements.cucumber-tags>
             </properties>
         </profile>
         <profile>
@@ -56,7 +57,9 @@
                 <requirements.fail-build-on-checkstyle-error>true</requirements.fail-build-on-checkstyle-error>
                 <requirements.jacoco-line-coverage>0.7</requirements.jacoco-line-coverage>
                 <requirements.jacoco-branch-coverage>0.7</requirements.jacoco-branch-coverage>
-                <requirements.cucumber-tags>@grade5-requirement</requirements.cucumber-tags>
+                <requirements.cucumber-tags>@grade2-requirement or @grade3-requirement or @grade4-requirement or
+                    @grade5-requirement
+                </requirements.cucumber-tags>
             </properties>
         </profile>
     </profiles>
